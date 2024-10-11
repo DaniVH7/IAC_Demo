@@ -8,4 +8,4 @@ services:
   region: oregon
   buildCommand: pip install -r requirements.txt
   startCommand: python3 app.py
-version: "2"
+version: "1"
