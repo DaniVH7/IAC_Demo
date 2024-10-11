@@ -1,15 +1,13 @@
 import web
 
 urls = (
-    '/(.*)', 'hello'
+    '/(.*)', 'Index'
 )
-app = web.application(urls, globals())
+app = web.application(urls)
 
-class hello:
-    def GET(self, name):
-        if not name:
-            name = 'World'
-        return 'Hello, ' + name + '!'
+class Index:
+    def GET(self):
+        return 'Hello dani'
 
 if __name__ == "__main__":
     app.run()
