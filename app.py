@@ -1,13 +1,13 @@
 import web
 
 urls = (
-    '/(.*)', 'Index'
+    '/(.*)', 'Index'  # Asegúrate de que 'Index' sea una cadena correcta
 )
-app = web.application(urls)
 
 class Index:
     def GET(self):
         return 'Hello dani'
+
 
 if __name__ == "__main__":
     app.run()
